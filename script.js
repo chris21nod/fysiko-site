@@ -72,6 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Contact form handling
     setupContactForm();
 
+    // Dark mode functionality
+    initDarkMode();
+
     // Show demo notification on first load
     showDemoNotification();
 });
@@ -303,3 +306,35 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Dark Mode Functionality
+function initDarkMode() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to 'light' mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', currentTheme);
+    
+    // Update icon based on current theme
+    updateThemeIcon(currentTheme);
+    
+    // Toggle theme when button is clicked
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+    
+    function updateThemeIcon(theme) {
+        if (themeIcon) {
+            themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+    }
+}
