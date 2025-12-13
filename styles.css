@@ -478,7 +478,7 @@ body {
 
 .footer p {
     margin: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--white)
 }
 
 /* Responsive Design */
