@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fysiko - Φυσικό ΕΚΠΑ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
 </head>
@@ -30,22 +31,31 @@
                         <li><a href="#activities">Δραστηριότητες</a></li>
                     </ul>
                 </li>
-                <li class="nav-dropdown">
-                    <a href="#courses" class="nav-link">Μαθήματα</a>
+            <li class="nav-dropdown">
+                 <a href="#courses" class="nav-link">Μαθήματα</a>
                     <ul class="dropdown-menu">
                         <li><a href="#prwto-etos">Πρώτος Έτος</a></li>
                         <li><a href="#deytero-etos">Δεύτερο Έτος</a></li>
                         <li><a href="#trito-etos">Τρίτο Έτος</a></li>
                         <li><a href="#ep-kormou-eisagoges">Επ. Κορμού / Εισαγωγής</a></li>
-                        <li><a href="#kateythinsis">Κατεύθυνσης</a></li>
-                        <li><a href="#eleytheris">Ελεύθερης Επιλογής</a></li>
+                        <li class="nav-dropdown-sub">
+                        <a href="#kateythinsis" class="dropdown-link">Κατεύθυνσης <span class="arrow">›</span></a>
+                        <ul class="dropdown-submenu">
+                        <li><a href="#k1astrofysiki">Κ1: Αστροφυσική</a></li>
+                        <li><a href="#k2hlektroniki">Κ2: Ηλεκτρονική</a></li>
+                        <li><a href="#k3periballon">Κ3: Φυσική Περιβάλλοντος</a></li>
+                        <li><a href="#k4pyriniki">Κ4: Πυρηνική Φυσική</a></li>
+                        <li><a href="#k5sterea">Κ5: Συμπυκνωμένη Ύλη</a></li>
                     </ul>
-                </li>
+            </li>
+        <li><a href="#eleytheris">Ελεύθερης Επιλογής</a></li>
+    </ul>
+</li>
                 <li><a href="#assoc" class="nav-link">Σύλλογοι</a></li>
                 <li><a href="#contact" class="nav-link">Επικοινωνία</a></li>
                 <li>
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span id="themeIcon">🌙</span>
+                      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                      <span id="themeIcon" class="theme-icon"></span>
                     </button>
                 </li>
             </ul>
@@ -98,6 +108,7 @@
     <section id="info" class="page">
         <div class="container">
             <h1>Πληροφορίες</h1>
+            <br><br>
             <p class="page-subtitle">Επιλέξτε μία από τις παρακάτω κατηγορίες για περισσότερες πληροφορίες</p>
             
             <div class="info-grid">
@@ -286,117 +297,116 @@
         </div>
     </section>
 
-    <!-- Prwto-etos -->
-    <section id="prwto-etos" class="page active">
-        
-        <div class="container">
-            <h1>Πρώτο Έτος</h1>
-            <div class="content-section">
-                <p>Όλα τα μαθήματα κορμού του 1ου έτους είναι υποχρεωτικά και πραγματοποιούν μια εισαγωγή σε βασικές έννοιες της Φυσικής. Επιπλέον, θέτουν τις απαραίτητες μαθηματικές βάσεις, οι οποίες αποτελούν προϋπόθεση για την κατανόηση του φορμαλισμού που χρησιμοποιείται σε μαθήματα επόμενων ετών. Παρακάτω μπορείτε να δείτε μια λίστα των μαθημάτων, καθώς και τους διδάσκοντες και τα mail τους.</p>
-                                
-                <div class="cards">
+  <!-- Prwto-etos -->
+<section id="prwto-etos" class="page">
+    <div class="container">
+        <h1>Πρώτο Έτος</h1>
+        <div class="content-section">
+            <p>Όλα τα μαθήματα κορμού του 1ου έτους είναι υποχρεωτικά και πραγματοποιούν μια εισαγωγή σε βασικές έννοιες της Φυσικής. Επιπλέον, θέτουν τις απαραίτητες μαθηματικές βάσεις, οι οποίες αποτελούν προϋπόθεση για την κατανόηση του φορμαλισμού που χρησιμοποιείται σε μαθήματα επόμενων ετών.</p>
+            
+            <!-- Α Εξάμηνο -->
+            <div class="semester-section">
+            <h2 class="semester-title"> Α Εξάμηνο</h2> 
+                    <div class="cards">
                     <div class="card left">
-                        <h3>Φυσική Ι </h3>
+                        <h3>Φυσική Ι</h3>
                         Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
                         Διδάσκοντες:<br>
                         Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
                         Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
                         Ε. Φλόκα, efloca@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS153/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyQriB_yWbAPCN5j?e=0zZTLo"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/PHYS153/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyQriB_yWbAPCN5j?e=0zZTLo" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
+                        <h3>Βασικό Εργαστήριο Φυσικής Ι</h3>
+                        Κωδικός: 10ΥΚΟ05<br>
+                        Διδάσκοντες:<br>
+                        Ε. Στυλιάρης (υπεύθυνος), stiliaris@phys.uoa.gr<br>
+                        <br>
+                        <a href="https://eclass.uoa.gr/courses/PHYS157/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lggqya_xvlIPpCSvr2V?e=eFIPhe" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card left">
+                        <h3>Ανάλυση Ι</h3>
+                        Κωδικός: 10ΥΚΟ11<br>
+                        Διδάσκοντες:<br>
+                        Κ. Τύρος, ktyros@math.uoa.gr<br>
+                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                        <br>
+                        <a href="https://eclass.uoa.gr/courses/PHYS234/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqydMdBUbleoFDV0X?e=aa7paV" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card right">
+                        <h3>Βασικές Μαθηματικές Μέθοδοι</h3>
+                        Κωδικός: 10ΥΚΟ10<br>
+                        Διδάσκων:<br>
+                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                        <br>
+                        <a href="https://eclass.uoa.gr/courses/PHYS338/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lgg2VtxT-z0Q7CVftFB?e=w38Yt0" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card left">
+                        <h3>Θεωρία Πιθανοτήτων</h3>
+                        Κωδικός: 10ΥΚΟ13<br>
+                        Διδάσκοντες:<br>
+                        Ν. Σαρλής, nsarlis@phys.uoa.gr<br>
+                        Η. Σακέλλης, e_sakel@phys.uoa.gr<br>
+                        <br>
+                        <a href="https://eclass.uoa.gr/courses/PHYS346/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyVjbBmH_RizMxSP?e=xWYXoZ" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Β Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title"> Β Εξάμηνο</h2>
+                <div class="cards">
+                    <div class="card left">
                         <h3>Φυσική ΙΙ</h3>
                         Κωδικός: 10ΥΚΟ02<br>
-                        Εξάμηνο: Β<br>
                         Διδάσκοντες:<br>
                         Ν. Σαρλής, nsarlis@phys.uoa.gr<br>
                         Ε. Σκορδάς, eskordas@phys.uoa.gr<br>
                         Α. Παπαθανασίου, antpapa@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS168/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lggqx8C9Vy3D40GB6ZI?e=7IgqZH"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Βασικό Εργαστήριο Φυσικής Ι</h3>  <!-- kathigites??? -->
-                        Κωδικός: 10ΥΚΟ05<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Ε. Στυλιάρης (υπεύθυνος), stiliaris@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS157/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lggqya_xvlIPpCSvr2V?e=eFIPhe"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/PHYS168/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lggqx8C9Vy3D40GB6ZI?e=7IgqZH" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
-                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙ</h4>  <!-- kathigites??? -->
+                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙ</h3>
                         Κωδικός: 10ΥΚΟ06<br>
-                        Εξάμηνο: Β<br>
                         Διδάσκοντες:<br>
                         Σ. Γαρδέλης (υπεύθυνος), sgardelis@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS179/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyNjWw1WBpP_ZTSI?e=KhzK9c"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/PHYS179/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyNjWw1WBpP_ZTSI?e=KhzK9c" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card left">
-                        <h3>Ανάλυση Ι</h4>
-                        Κωδικός: 10ΥΚΟ11<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Κ. Τύρος, ktyros@math.uoa.gr<br>
-                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS234/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqydMdBUbleoFDV0X?e=aa7paV"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Ανάλυση ΙΙ</h4>
+                        <h3>Ανάλυση ΙΙ</h3>
                         Κωδικός: 10ΥΚΟ12<br>
-                        Εξάμηνο: Β<br>
                         Διδάσκοντες:<br>
                         Α. Οικονόμου, aeconom@math.uoa.gr<br>
                         Γ. Παπαθανασίου, gpapathanasiou@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/MATH147/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyJg9U0LTjIGpMhX?e=k2Ffww"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Βασικές Μαθηματικές Μέθοδοι</h4>
-                        Κωδικός: 10ΥΚΟ10<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκων:<br>
-                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS338/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9Lgg2VtxT-z0Q7CVftFB?e=w38Yt0"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/MATH147/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyJg9U0LTjIGpMhX?e=k2Ffww" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
-                        <h3>Συνήθεις Διαφορικές Εξισώσεις</h4>
+                        <h3>Συνήθεις Διαφορικές Εξισώσεις</h3>
                         Κωδικός: 10ΥΚΟ14<br>
-                        Εξάμηνο: Β<br>
                         Διδάσκοντες:<br>
                         Γ. Σωτηροπούλου, georgiasot@phys.uoa.gr<br>
-                        Δ. Φραντζεσκάκης, dfrantz@phys.uoa.gr
+                        Δ. Φραντζεσκάκης, dfrantz@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS339/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyEavFq_gtjxuG78?e=UPaOXc"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/PHYS339/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyEavFq_gtjxuG78?e=UPaOXc" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card left">
-                        <h3>Θεωρία Πιθανοτήτων</h4>
-                        Κωδικός: 10ΥΚΟ13<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Ν. Σαρλής, nsarlis@phys.uoa.gr<br>
-                        Η. Σακέλλης, e_sakel@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS346/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyVjbBmH_RizMxSP?e=xWYXoZ"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Υπολογιστές</h4>
+                        <h3>Υπολογιστές</h3>
                         Κωδικός: 10ΥΚΟ20<br>
-                        Εξάμηνο: Β<br>
                         Διδάσκοντες:<br>
                         Μ. Αναστασόπουλος, maanast@phys.uoa.gr<br>
                         Γ. Λάτσας, glatsas@phys.uoa.gr<br>
@@ -404,372 +414,374 @@
                         Ε. Νισταζάκης (Εργαστήριο), enistaz@phys.uoa.gr<br>
                         Α. Τασολάμπρου (Εργαστήριο), atasolam@phys.uoa.gr<br>
                         <br>
-                        <a href="https://eclass.uoa.gr/courses/PHYS101/"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyD_PnSodrdgG-TN?e=SXk8I3"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="https://eclass.uoa.gr/courses/PHYS101/" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="https://1drv.ms/u/s!AuL3LXAW9LggqyD_PnSodrdgG-TN?e=SXk8I3" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                 </div>
-
+            </div>
+            
+            <div class="semester-summary">
+                <h3>Σύνοψη Πρώτου Έτους</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Α Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Β Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">10</span>
+                        <span class="summary-text">Συνολικά Μαθήματα</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">30</span>
+                        <span class="summary-text">ECTS</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Deytero-etos -->
-    <section id="deytero-etos" class="page active">
-        
-        <div class="container">
-            <h1>Δεύτερο Έτος</h1>
-            <div class="content-section">
-                <p>Κατά το δεύτερο έτος σπουδών και συγκεκριμένα το Δ Εξάμηνο ξεκινούν μερικά από τα Μαθήματα Επιλογής Κορμού, καθώς και τα Μαθήματα Εισαγωγών στις κατευθύνσεις του Τμήματος Φυσικής (βλ. Επ. Κορμού / Εισαγωγές). Παρακάτω μπορείτε να δείτε μια λίστα μόνο των υποχρεωτικών μαθημάτων κορμού του έτους, καθώς και τους διδάσκοντες και τα mail τους.</p>
-                                
+<section id="deytero-etos" class="page">
+    <div class="container">
+        <h1>Δεύτερο Έτος</h1>
+        <div class="content-section">
+            <p>Κατά το δεύτερο έτος σπουδών και συγκεκριμένα το Δ Εξάμηνο ξεκινούν μερικά από τα Μαθήματα Επιλογής Κορμού, καθώς και τα Μαθήματα Εισαγωγών στις κατευθύνσεις του Τμήματος Φυσικής (βλ. Επ. Κορμού / Εισαγωγές). Παρακάτω μπορείτε να δείτε μια λίστα μόνο των υποχρεωτικών μαθημάτων κορμού του έτους, καθώς και τους διδάσκοντες και τα mail τους.</p>
+            
+            <!-- Γ Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title"> Γ Εξάμηνο</h2>
                 <div class="cards">
                     <div class="card left">
-                        <h3>Φυσική Ι </h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Φυσική ΙΙΙ</h3>
+                        Κωδικός: 10ΥΚΟ03<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Μ.Ν. Ασημακοπούλου, masim@phys.uoa.gr<br>
+                        Κ. Βελλίδης, cvellid@phys.uoa.gr<br>
+                        Ν. Σαουλίδου, nsaoulid@phys.uoa.gr<br>
+                        Κ. Τσακμακίδης, ktsakmakidis@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
-                        <h3>Φυσική ΙΙ</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Μηχανική Ι</h3>
+                        Κωδικός: 10ΥΚΟ31<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                        Ν. Βλαχάκης, vlahakis@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card left">
-                        <h3>Βασικό Εργαστήριο Φυσικής Ι</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙΙ</h3>
+                        Κωδικός: 10ΥΚΟ07<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Κ. Σιμσερίδης, csimseri@phys.uoa.gr<br>
+                        Ε. Σκορδάς, eskordas@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
-                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙ</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Μαθηματικές Μέθοδοι Φυσικής Ι</h3>
+                        Κωδικός: 10ΥΚΟ15<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Γ. Μπαρμπάτης, gbarbatis@math.uoa.gr<br>
+                        Δ. Φραντζεσκάκης, dfrantz@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card left">
-                        <h3>Ανάλυση Ι</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Υπολογιστική Φυσική</h3>
+                        Κωδικός: 10ΥΚΟ21<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Κ. Βελλίδης, cvellid@phys.uoa.gr<br>
+                        Κ. Δασύρα, kdasyra@phys.uoa.gr<br>
+                        Κ. Θεοφιλάτος, ktheofi@phys.uoa.gr<br>
+                        Δ. Φασουλιώτης, dfassoul@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Ανάλυση ΙΙ</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Βασικές Μαθηματικές Μέθοδοι</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Συνήθεις Διαφορικές Εξισώσεις</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Θεωρία Πιθανοτήτων</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Υπολογιστές</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
-
-    <!-- Trito-etos -->
-    <section id="trito-etos" class="page active">
-        
-        <div class="container">
-            <h1>Τρίτο Έτος</h1>
-            <div class="content-section">
-                <p>Στο τρίτο έτος ολοκληρώνεται ο κορμός του προγράμματος σπουδών με τα μαθήματα του Ε Εξαμήνου, ενώ κατά το ΣΤ Εξάμηνο επιλέγονται τα υπόλοιπα Μαθήματα Επιλογής Κορμού και Εισαγωγής Κατεύθυνσης (βλ. Επ. Κορμού / Εισαγωγές). Παρακάτω μπορείτε να δείτε μια λίστα μόνο των υποχρεωτικών μαθημάτων κορμού του έτους, καθώς και τους διδάσκοντες και τα mail τους.</p>
-                                
+            
+            <!-- Δ Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title"> Δ Εξάμηνο</h2>
                 <div class="cards">
                     <div class="card left">
-                        <h3>Φυσική Ι </h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Φυσική IV</h3>
+                        Κωδικός: 10ΥΚΟ04<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Σ. Γαρδέλης, sgardelis@phys.uoa.gr<br>
+                        Ν. Σαουλίδου, nsaoulid@phys.uoa.gr<br>
+                        Κ. Σιμσερίδης, csimseri@phys.uoa.gr<br>
+                        Δ. Φασουλιώτης, dfassoul@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card right">
-                        <h3>Φυσική ΙΙ</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Μαθηματικές Μέθοδοι Φυσικής ΙΙ</h3>
+                        Κωδικός: 10ΥΚΟ16<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Δ. Φραντζεσκάκης, dfrantz@phys.uoa.gr<br>
+                        Ι. Παπαδημητρίου, ipapadi@phys.uoa.gr<br>
+                        Β. Βερβάτης, vvervatis@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
                     <div class="card left">
-                        <h3>Βασικό Εργαστήριο Φυσικής Ι</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
+                        <h3>Βασικό Εργαστήριο Φυσικής IV</h3>
+                        Κωδικός: 10ΥΚΟ08<br>
                         Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Ε. Νισταζάκης, enistaz@phys.uoa.gr<br>
                         <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
                     </div>
-                    <div class="card right">
-                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙ</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    
                 </div>
-
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Trito-etos -->
+<section id="trito-etos" class="page">
+    <div class="container">
+        <h1>Τρίτο Έτος</h1>
+        <div class="content-section">
+            <p>Στο τρίτο έτος ολοκληρώνεται ο κορμός του προγράμματος σπουδών με τα μαθήματα του Ε Εξαμήνου, ενώ κατά το ΣΤ Εξάμηνο επιλέγονται τα υπόλοιπα Μαθήματα Επιλογής Κορμού και Εισαγωγής Κατεύθυνσης (βλ. Επ. Κορμού / Εισαγωγές). Παρακάτω μπορείτε να δείτε μια λίστα μόνο των υποχρεωτικών μαθημάτων κορμού του έτους, καθώς και τους διδάσκοντες και τα mail τους.</p>
+            
+            <!-- Ε Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title"> Ε Εξάμηνο</h2>
+                <div class="cards">
+                    <div class="card left">
+                        <h3>Ειδική Θεωρία της Σχετικότητας</h3>
+                        Κωδικός: 10ΥΚΟ35<br>
+                        Διδάσκοντες:<br>
+                        Κ. Θεοφιλάτος, ktheofi@phys.uoa.gr<br>
+                        Ι. Παπαδημητρίου, ipapadi@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card right">
+                        <h3>Ηλεκτρομαγνητισμός Ι</h3>
+                        Κωδικός: 10ΥΚΟ32<br>
+                        Διδάσκοντες:<br>
+                        Κ. Βελλίδης, cvellid@phys.uoa.gr<br>
+                        Δ. Σταμόπουλος, densta@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card left">
+                        <h3>Κβαντική Μηχανική Ι</h3>
+                        Κωδικός: 10ΥΚΟ33<br>
+                        Διδάσκοντες:<br>
+                        Φ. Μαυρόπουλος, fmavrop@phys.uoa.gr<br>
+                        Π. Σφήκας, sphicas@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    <div class="card right">
+                        <h3>Στατιστική Φυσική I</h3>
+                        Κωδικός: 10ΥΚΟ34<br>
+                        Διδάσκοντες:<br>
+                        Φ. Διάκονος, fdiakono@phys.uoa.gr<br>
+                        Α. Μουστάκας, arislm@phys.uoa.gr<br>
+                        Γ. Παπαθανασίου, antpapa@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Epilogis Kormoy-Eisagoges -->
-    <section id="ep-kormou-eisagoges" class="page active">
-        
-        <div class="container">
-            <h1>Επιλογής κορμού / Εισαγωγές</h1>
-            <div class="content-section">
-                <p>Για την ολοκλήρωση των σπουδών στο Τμήμα είναι απαραίτητη η επιτυχής εξέταση σε τουλάχιστον 3 από τα 5 διαθέσιμα Μαθήματα Επιλογής Κορμού, καθώς και σε τουλάχιστον 3 από τα 5 διαθέσιμα Μαθήματα Εισαγωγής Κατεύθυνσης (σε περίπτωση που δε θέλετε να εκπονήσετε πτυχιακή εργασία, πρέπει να εξεταστείτε και στα 5). Προσέξτε πως κάθε Τομέας έχει ορίσει συγκεκριμένα προαπαιτούμενα Μαθήματα Επιλογής Κορμού, προκειμένου να είναι δυνατή η ολοκλήρωση των σπουδών στην αντίστοιχη κατεύθυνση. Παρακάτω μπορείτε να δείτε μια λίστα των μαθημάτων, καθώς και τους διδάσκοντες και τα mail τους.</p>
-                                
-                <div class="cards">
-                    <div class="card left">
-                        <h3>Φυσική Ι </h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Φυσική ΙΙ</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Βασικό Εργαστήριο Φυσικής Ι</h3>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Βασικό Εργαστήριο Φυσικής ΙΙ</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Ανάλυση Ι</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Ανάλυση ΙΙ</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Βασικές Μαθηματικές Μέθοδοι</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Συνήθεις Διαφορικές Εξισώσεις</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card left">
-                        <h3>Θεωρία Πιθανοτήτων</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                    <div class="card right">
-                        <h3>Υπολογιστές</h4>
-                        Κωδικός: 10ΥΚΟ01<br>
-                        Εξάμηνο: Α<br>
-                        Διδάσκοντες:<br>
-                        Μ. Βασιλείου, mvasili@phys.uoa.gr<br>
-                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
-                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
-                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
-                        <br>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">eClass</a>
-                        <a href="https://example.com"  target="_blank" rel="noopener noreferrer" class="btn btn-thirdary">Drive</a>
-                    </div>
-                </div>
 
+<section id="ep-kormou-eisagoges" class="page">
+    <div class="container">
+        <h1>Επιλογής Κορμού & Εισαγωγές</h1>
+        
+        <div class="content-section">
+            <p>Για την ολοκλήρωση των σπουδών στο Τμήμα είναι απαραίτητη η επιτυχής εξέταση σε τουλάχιστον 3 από τα 5 διαθέσιμα Μαθήματα Επιλογής Κορμού, καθώς και σε τουλάχιστον 3 από τα 5 διαθέσιμα Μαθήματα Εισαγωγής Κατεύθυνσης (σε περίπτωση που δε θέλετε να εκπονήσετε πτυχιακή εργασία, πρέπει να εξεταστείτε και στα 5).</p>
+            
+              <div class="cards">
+                <div class="card left">
+                    <a href="#epilogis-kormou-list" class="info-card-link">
+                        <h3>Επιλογής Κορμού</h3>
+                    </a>
+                </div>
+                
+                <div class="card right">
+                    <a href="#eisagoges-kateythinsis-list" class="info-card-link">
+                        <h3>Εισαγωγές Κατεύθυνσης</h3>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
+<!-- Επιλογής Κορμού - Λίστα Μαθημάτων -->
+<section id="epilogis-kormou-list" class="page">
+    <div class="container">
+        <h1>Επιλογής Κορμού</h1>
+        
+        <div class="content-section">  
+            <div class="cards">
+                <!-- Δυναμική των Ρευστών -->
+                <div class="card left">
+                    <h3>Δυναμική των Ρευστών</h3>
+                    Κωδικός: 10ΕΚΟ05<br>
+                    Διδάσκοντες:<br>
+                    Ν. Βλαχάκης, vlahakis@phys.uoa.gr<br>
+                    Σ. Σοφιανός, ssofiano@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Μηχανική ΙΙ -->
+                <div class="card right">
+                    <h3>Μηχανική ΙΙ</h3>
+                    Κωδικός: 10ΕΚΟ01<br>
+                    Διδάσκοντες:<br>
+                    Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Ηλεκτρομαγνητισμός ΙΙ -->
+                <div class="card left">
+                    <h3>Ηλεκτρομαγνητισμός ΙΙ</h3>
+                    Κωδικός: 10ΕΚΟ02<br>
+                    Διδάσκοντες:<br>
+                    Κ. Αβραμίδης, kavramidis@phys.uoa.gr<br>
+                    Β. Σπανός, vspanos@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Κβαντική Μηχανική ΙΙ -->
+                <div class="card right">
+                    <h3>Κβαντική Μηχανική ΙΙ</h3>
+                    Κωδικός: 10ΕΚΟ03<br>
+                    Διδάσκοντες:<br>
+                    Π. Σφήκας, sphicas@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Στατιστική Φυσική ΙΙ -->
+                <div class="card left">
+                    <h3>Στατιστική Φυσική ΙΙ</h3>
+                    Κωδικός: 10ΕΚΟ04<br>
+                    Διδάσκοντες:<br>
+                    Ι. Λελίδης, ilelidis@phys.uoa.gr<br>
+                    Α. Μουστάκας, arislm@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Εισαγωγές Κατεύθυνσης - Λίστα Μαθημάτων -->
+<section id="eisagoges-kateythinsis-list" class="page">
+    <div class="container">
+        <h1>Εισαγωγές Κατεύθυνσης</h1> 
+
+        <div class="content-section">
+            <div class="cards">
+                <!-- Εισαγωγή στην Αστροφυσική -->
+                <div class="card left">
+                    <h3>Εισαγωγή στην Αστροφυσική</h3>
+                    Κωδικός: 10ΕΚΑ01<br>
+                    Διδάσκοντες:<br>
+                    Σ. Καζαντζίδης, skazantzidis@phys.uoa.gr<br>
+                    Μ. Πετροπούλου, mpetropo@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Εισαγωγή στην Ηλεκτρονική Φυσική -->
+                <div class="card right">
+                    <h3>Εισαγωγή στην Ηλεκτρονική Φυσική</h3>
+                    Κωδικός: 10ΕΚΑ02<br>
+                    Διδάσκοντες:<br>
+                    Ε. Ροδίτη, eroditi@phys.uoa.gr<br>
+                    Ε. Νισταζάκης, enistaz@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Εισαγωγή στη Φυσική Ατμόσφαιρας -->
+                <div class="card left">
+                    <h3>Εισαγωγή στη Φυσική Ατμόσφαιρας</h3>
+                    Κωδικός: 10ΕΚΑ03<br>
+                    Διδάσκοντες:<br>
+                    Κ. Καρτάλης, ckartali@phys.uoa.gr<br>
+                    Χ. Τζάνης, chtzanis@phys.uoa.gr<br>
+                    Συντονισμός εργαστηρίου: Α. Μαντζιαφού<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Εισαγωγή στην Πυρηνική Φυσική και στη Φυσική Στοιχειωδών Σωματιδίων -->
+                <div class="card right">
+                    <h3>Εισαγωγή στην Πυρηνική Φυσική</h3>
+                    Κωδικός: 10ΕΚΑ04<br>
+                    Διδάσκοντες:<br>
+                    Κ. Βελλίδης, cvellid@phys.uoa.gr<br>
+                    Θ. Μερτζιμέκης, tmertzi@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+                
+                <!-- Εισαγωγή στη Φυσική Στερεάς Κατάστασης -->
+                <div class="card left">
+                    <h3>Εισαγωγή στη Φυσική Στερεάς Κατάστασης</h3>
+                    Κωδικός: 10ΕΚΑ05<br>
+                    Διδάσκοντες:<br>
+                    Β. Λυκοδήμος, vlikodimos@phys.uoa.gr<br>
+                    Ν. Στεφάνου, nstefan@phys.uoa.gr<br>
+                    <br>
+                    <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                    <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Kateythinseis -->
     <section id="kateythinsis" class="page">
@@ -781,41 +793,1017 @@
                 <p>Κάθε κατεύθυνση περιλαμβάνει 3 Υποχρεωτικά Μαθήματα (εκ των οποίων το ένα είναι το Εργαστήριο της Κατεύθυνσης) και 4 ή περισσότερα Μαθήματα Επιλογής. Για τη λήψη του πτυχίου απαραίτητη είναι η επιτυχής εξέταση σε όλα τα Υποχρεωτικά Μαθήματα της Κατεύθυνσης, καθώς και 2 από τα Μαθήματα Επιλογής της Κατεύθυνσης. Προσέξτε πως, πέρα από τα μαθήματα αυτά, κάθε Κατεύθυνση θέτει ένα ή περισσότερα Μαθήματα Επιλογής Κορμού ως προαπαιτούμενο, καθώς και το αντίστοιχο Μάθημα Εισαγωγής στην Κατεύθυνση αυτή (βλ. Επ. Κορμού / Εισαγωγές).</p>
                 <p>Αναφέρουμε, τέλος, πως μεταξύ των Μαθημάτων Επιλογής κάθε Κατεύθυνσης υπάρχουν και ορισμένα τα οποία προσφέρονται σε συνδιδασκαλία με κάποιο από τα Προγράμματα Μεταπτυχιακών Σπουδών του Τμήματος και φέρουν την ένδειξη «Μεταπτυχιακό». Παρακάτω παρατίθενται οι πέντε Κατευθύνσεις με τους κωδικούς τους και κάποιες βασικές πληροφορίες. Για να μεταβείτε στα μαθήματα κάθε κατεύθυνσης, πατήστε είτε στην αντίστοιχη εικόνα, είτε στον τίτλο της.</p>
 
-                <div class="info-grid">
+                           <div class="cards">
+                <!-- Κ1 -->
+                <div class="card left">
                     <a href="#k1astrofysiki" class="info-card-link">
-                        <div class="card large">
-                            <h3>Κ1: Αστροφυσική, Αστρονομία, Μηχανική</h3>
-                        </div>
-                    </a>
-                    <a href="#k2hlektroniki" class="info-card-link">
-                        <div class="card large">
-                            <h3>Κ2: Ηλεκτρονική, Υπολογιστές, Τηλεπικοινωνίες και Αυτοματισμός</h3>                            
-                        </div>
-                    </a>
-                    <a href="#k3periballon" class="info-card-link">
-                        <div class="card large">
-                            <h3>Κ3: Φυσική Περιβάλλοντος</h3>                        
-                        </div>
-                    </a>
-                    <a href="#k4pyriniki" class="info-card-link">
-                        <div class="card large">
-                            <h3>Κ4: Πυρηνική Φυσική και Φυσική Στοιχειωδών Σωματιδίων</h3>
-                        </div>
-                    </a>
-                    <a href="#k5sterea" class="info-card-link">
-                        <div class="card large">
-                            <h3>Κ5: Φυσική Συμπυκνωμένης Ύλης</h3>
-                        </div>
+                        <h3>Κ1: Αστροφυσική, Αστρονομία, Μηχανική</h3>
                     </a>
                 </div>
+                
+                <!-- Κ2 -->
+                <div class="card right">
+                    <a href="#k2hlektroniki" class="info-card-link">
+                        <h3>Κ2: Ηλεκτρονική, Υπολογιστές, Τηλεπικοινωνίες και Αυτοματισμός</h3>                            
+                    </a>
+                </div>
+                
+                <!-- Κ3 -->
+                <div class="card left">
+                    <a href="#k3periballon" class="info-card-link">
+                        <h3>Κ3: Φυσική Περιβάλλοντος</h3>                        
+                    </a>
+                </div>
+                
+                <!-- Κ4 -->
+                <div class="card right">
+                    <a href="#k4pyriniki" class="info-card-link">
+                        <h3>Κ4: Πυρηνική Φυσική και Φυσική Στοιχειωδών Σωματιδίων</h3>
+                    </a>
+                </div>
+                
+                <!-- Κ5 -->
+                <div class="card left">
+                    <a href="#k5sterea" class="info-card-link">
+                        <h3>Κ5: Φυσική Συμπυκνωμένης Ύλης</h3>
+                    </a>
+                </div>
+            </div>
+    </section>
 
-                <div class="content-section">
-                    <h3>Συνεισφορά Υλικού</h3>
-                    <p>Χωρίς εσάς το υλικό αυτό δε θα μπορούσε να είναι διαθέσιμο για όλους, επομένως να θυμάστε πως εάν έχετε βοηθηθεί σε κάποιο μάθημα, μπορείτε να συνεισφέρετε και να βοηθήσετε σε κάποιο άλλο. Για να συνεισφέρετε υλικό, παρακαλούμε επισκεφθείτε τη σελίδα <a href="#contact">Επικοινωνία</a> για περισσότερες πληροφορίες.</p>
+<!-- Κ1: Αστροφυσική Κατεύθυνση -->
+<section id="k1astrofysiki" class="page">
+    <div class="container">
+        <h1>Κ1: Αστροφυσική, Αστρονομία, Μηχανική</h1>
+        
+        <div class="content-section">
+            <p>Σε αυτή τη σελίδα θα βρείτε τα μαθήματα της κατεύθυνσης Αστροφυσικής, Αστρονομίας και Μηχανικής, οργανωμένα ανά εξάμηνο.</p>
+            
+            <!-- Ζ' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Αστροφυσικά Ρευστά -->
+                    <div class="card left">
+                        <h3>Αστροφυσικά Ρευστά</h3>
+                        Κωδικός: 10ΥΚ102<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Ν. Βλαχάκης, vlahakis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Αστροφυσική Υψηλών Ενεργειών -->
+                    <div class="card right">
+                        <h3>Αστροφυσική Υψηλών Ενεργειών</h3>
+                        Κωδικός: 10ΕΚ101<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Μ. Πετροπούλου, mpetropo@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Γενική Θεωρία της Σχετικότητας -->
+                    <div class="card left">
+                        <h3>Γενική Θεωρία της Σχετικότητας</h3>
+                        Κωδικός: 18203 & 10ΕΚ111<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Κ. Σφέτσος, ksfetsos@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Διαστημική και Ηλιακή Φυσική -->
+                    <div class="card right">
+                        <h3>Διαστημική και Ηλιακή Φυσική</h3>
+                        Κωδικός: 10ΕΚ102<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Ι. Α. Δαγκλής, iadaglis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Εργαστήριο Κατεύθυνσης Αστροφυσικής -->
+                    <div class="card left">
+                        <h3>Εργαστήριο Κατεύθυνσης Αστροφυσικής</h3>
+                        Κωδικός: 10ΥΚ103<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                        Κ. Γαζέας, kgaze@phys.uoa.gr<br>
+                        Ι. Α. Δαγκλής, iadaglis@phys.uoa.gr<br>
+                        Κ. Δασύρα, kdasyra@phys.uoa.gr<br>
+                        Δ. Χατζηδημητρίου, deshatzi@phys.uoa.gr<br>
+                        Γ. Μπαλάσης<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική των Αστέρων -->
+                    <div class="card right">
+                        <h3>Φυσική των Αστέρων</h3>
+                        Κωδικός: 10ΥΚ101<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Δ. Χατζηδημητρίου, deshatzi@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Γαλαξίες -->
+                    <div class="card left">
+                        <h3>Γαλαξίες</h3>
+                        Κωδικός: 10ΕΚ103<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Κ. Δασύρα, kdasyra@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Τεχνικές Παρατήρησης και Επεξεργασίας Δεδομένων στην Αστροφυσική -->
+                    <div class="card right">
+                        <h3>Τεχνικές Παρατήρησης και Επεξεργασίας Δεδομένων στην Αστροφυσική</h3>
+                        Κωδικός: 18303 & 10ΕΚ112<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Κ. Γαζέας, kgaze@phys.uoa.gr<br>
+                        Κ. Δασύρα, kdasyra@phys.uoa.gr<br>
+                        Γ. Βασιλόπουλος, gevas@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Σύνοψη Κατεύθυνσης -->
+            <div class="semester-summary">
+                <h3>Σύνοψη Κατεύθυνσης Αστροφυσικής</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">6</span>
+                        <span class="summary-text">Μαθήματα Ζ' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">2</span>
+                        <span class="summary-text">Μαθήματα Η' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Υποχρεωτικά</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">4</span>
+                        <span class="summary-text">Επιλογής</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">1</span>
+                        <span class="summary-text">Επιλογής Μεταπτυχιακού</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Κ2: Ηλεκτρονική Κατεύθυνση -->
+<section id="k2hlektroniki" class="page">
+    <div class="container">
+        <h1>Κ2: Ηλεκτρονική, Υπολογιστές, Τηλεπικοινωνίες και Αυτοματισμός</h1>
+        
+        <div class="content-section">
+            <p>Σε αυτή τη σελίδα θα βρείτε τα μαθήματα της κατεύθυνσης Ηλεκτρονικής, Υπολογιστών, Τηλεπικοινωνιών και Αυτοματισμού, οργανωμένα ανά εξάμηνο.</p>
+            
+            <!-- Ζ' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Οπτικοηλεκτρονική και Οπτικές Επικοινωνίες -->
+                    <div class="card left">
+                        <h3>Οπτικοηλεκτρονική και Οπτικές Επικοινωνίες</h3>
+                        Κωδικός: 10ΕΚ202<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Α. Τζανακάκη, atzanakaki@phys.uoa.gr<br>
+                        Α. Τασολάμπρου, atasolam@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Οργάνωση Συστημάτων Υπολογιστών -->
+                    <div class="card right">
+                        <h3>Οργάνωση Συστημάτων Υπολογιστών</h3>
+                        Κωδικός: 10ΥΚ202<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Δ. Ρεΐσης, dreisis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Προχωρημένα Θέματα Ηλεκτρονικής -->
+                    <div class="card left">
+                        <h3>Προχωρημένα Θέματα Ηλεκτρονικής</h3>
+                        Κωδικός: 10ΕΚ201<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Ε. Νισταζάκης, enistaz@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Σήματα και Συστήματα -->
+                    <div class="card right">
+                        <h3>Σήματα και Συστήματα</h3>
+                        Κωδικός: 10ΥΚ201<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Ε. Ροδίτη, eroditi@phys.uoa.gr<br>
+                        Ε. Νισταζάκης, enistaz@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Εισαγωγή στα Συστήματα Αυτοματισμού -->
+                    <div class="card left">
+                        <h3>Εισαγωγή στα Συστήματα Αυτοματισμού</h3>
+                        Κωδικός: 10ΕΚ211<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκων:<br>
+                        Μ. Αναστασόπουλος, maanast@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Εργαστήριο Κατεύθυνσης Ηλεκτρονικής -->
+                    <div class="card right">
+                        <h3>Εργαστήριο Κατεύθυνσης Ηλεκτρονικής, Υπολογιστών, Τηλεπικοινωνιών και Αυτοματισμού</h3>
+                        Κωδικός: 10ΥΚ203<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Ι. Τίγκελης, itigelis@phys.uoa.gr<br>
+                        Ε. Νισταζάκης, enistaz@phys.uoa.gr<br>
+                        Δ. Ρεΐσης, dreisis@phys.uoa.gr<br>
+                        Γ. Λάτσας, glatsas@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Μικροηλεκτρονική -->
+                    <div class="card left">
+                        <h3>Μικροηλεκτρονική</h3>
+                        Κωδικός: 10ΕΚ204<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Α. Τασολάμπρου, atasolam@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Συστήματα Υπολογιστών -->
+                    <div class="card right">
+                        <h3>Συστήματα Υπολογιστών</h3>
+                        Κωδικός: 18216 & 10ΕΚ212<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Δ. Ρεΐσης, dreisis@phys.uoa.gr<br>
+                        Γ. Λάτσας, glatsas@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Τηλεπικοινωνίες -->
+                    <div class="card left">
+                        <h3>Τηλεπικοινωνίες</h3>
+                        Κωδικός: 10ΕΚ203<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Α. Τζανακάκη, atzanakaki@phys.uoa.gr<br>
+                        Ι. Τίγκελης, itigelis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Σύνοψη Κατεύθυνσης -->
+            <div class="semester-summary">
+                <h3>Σύνοψη Κατεύθυνσης Ηλεκτρονικής</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">4</span>
+                        <span class="summary-text">Μαθήματα Ζ' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Η' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Υποχρεωτικά</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Επιλογής</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">2</span>
+                        <span class="summary-text">Επιλογής Μεταπτυχιακού</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Κ3: Φυσική Περιβάλλοντος Κατεύθυνση -->
+<section id="k3periballon" class="page">
+    <div class="container">
+        <h1>Κ3: Φυσική Περιβάλλοντος</h1>
+        
+        <div class="content-section">
+            <p>Σε αυτή τη σελίδα θα βρείτε τα μαθήματα της κατεύθυνσης Φυσικής Περιβάλλοντος, οργανωμένα ανά εξάμηνο.</p>
+            
+            <!-- Ζ' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Ποιότητα Ατμοσφαιρικού Περιβάλλοντος -->
+                    <div class="card left">
+                        <h3>Ποιότητα Ατμοσφαιρικού Περιβάλλοντος</h3>
+                        Κωδικός: 10ΕΚ301<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Μ.Ν. Ασημακοπούλου, masim@phys.uoa.gr<br>
+                        Ε. Γιαννακάκη, elina@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Ατμοσφαιρικού Οριακού Στρώματος -->
+                    <div class="card right">
+                        <h3>Φυσική Ατμοσφαιρικού Οριακού Στρώματος</h3>
+                        Κωδικός: 10ΥΚ302<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
+                        Γ. Σωτηροπούλου, georgiasot@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Ωκεανογραφία -->
+                    <div class="card left">
+                        <h3>Φυσική Ωκεανογραφία</h3>
+                        Κωδικός: 10ΕΚ302<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Σ. Σοφιανός, ssofiano@phys.uoa.gr<br>
+                        Β. Βερβάτης, vvervatis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Ανανεώσιμες Πηγές Ενέργειας -->
+                    <div class="card left">
+                        <h3>Ανανεώσιμες Πηγές Ενέργειας</h3>
+                        Κωδικός: 19418 & 10ΕΚ312<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκων:<br>
+                        Μ.Ν. Ασημακοπούλου, masim@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Δυναμική της Ατμόσφαιρας -->
+                    <div class="card right">
+                        <h3>Δυναμική της Ατμόσφαιρας</h3>
+                        Κωδικός: 10ΥΚ301<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Ε. Τυρλής, etyrlis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Εργαστήριο Κατεύθυνσης Φυσικής Περιβάλλοντος -->
+                    <div class="card left">
+                        <h3>Εργαστήριο Κατεύθυνσης Φυσικής Περιβάλλοντος</h3>
+                        Κωδικός: 10ΥΚ303<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Ε. Γιαννακάκη, elina@phys.uoa.gr<br>
+                        Ε. Μποσιώλη, ebossiol@phys.uoa.gr<br>
+                        Ε. Τυρλής, etyrlis@phys.uoa.gr<br>
+                        Σ. Καρατάσου, skarat@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Κλίμα - Κλιματική Αλλαγή -->
+                    <div class="card right">
+                        <h3>Κλίμα - Κλιματική Αλλαγή</h3>
+                        Κωδικός: 10ΕΚ303<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Χ. Τζάνης, chtzanis@phys.uoa.gr<br>
+                        Ε. Τυρλής, etyrlis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Συνοπτική Μετεωρολογία -->
+                    <div class="card left">
+                        <h3>Συνοπτική Μετεωρολογία</h3>
+                        Κωδικός: 19409 & 10ΕΚ311<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Ε. Φλόκα, efloca@phys.uoa.gr<br>
+                        Δ. Δεληγιώργη, despo@phys.uoa.gr<br>
+                        Α. Ντάντου, antant@phys.uoa.gr<br>
+                        Α. Πρωτονοταρίου, aprot@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Σύνοψη Κατεύθυνσης -->
+            <div class="semester-summary">
+                <h3>Σύνοψη Κατεύθυνσης Φυσικής Περιβάλλοντος</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Μαθήματα Ζ' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Η' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Υποχρεωτικά</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Επιλογής</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">2</span>
+                        <span class="summary-text">Επιλογής - Μεταπτυχιακού</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Κ4: Πυρηνική Φυσική και Φυσική Στοιχειωδών Σωματιδίων -->
+<section id="k4pyriniki" class="page">
+    <div class="container">
+        <h1>Κ4: Πυρηνική Φυσική και Φυσική Στοιχειωδών Σωματιδίων</h1>
+        
+        <div class="content-section">
+            <p>Σε αυτή τη σελίδα θα βρείτε τα μαθήματα της κατεύθυνσης Πυρηνικής Φυσικής και Φυσικής Στοιχειωδών Σωματιδίων, οργανωμένα ανά εξάμηνο.</p>
+            
+            <!-- Ζ' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Αστροσωματιδιακή Φυσική και Κοσμική Ακτινοβολία -->
+                    <div class="card left">
+                        <h3>Αστροσωματιδιακή Φυσική και Κοσμική Ακτινοβολία</h3>
+                        Κωδικός: 10ΕΚ401<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Μ. Γεροντίδου, mgeront@phys.uoa.gr><br>
+                        Β. Σπανός, vspanos@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Εργαστήριο Κατεύθυνσης Πυρηνικής Φυσικής και Φυσικής Στοιχειωδών Σωματιδίων -->
+                    <div class="card right">
+                        <h3>Εργαστήριο Κατεύθυνσης Πυρηνικής Φυσικής και Φυσικής Στοιχειωδών Σωματιδίων</h3>
+                        Κωδικός: 10ΥΚ403<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Κ. Θεοφιλάτος, ktheofil@phys.uoa.gr<br>
+                        Θ. Μερτζιμέκης, tmertzi@phys.uoa.gr<br>
+                        Ν. Σαουλίδου, nsaoulid@phys.uoa.gr<br>
+                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
+                        Δ. Φασουλιώτης, dfassoul@phys.uoa.gr<br>
+                        Μ. Γεροντίδου, mgeront@phys.uoa.gr<br>
+                        Λ. Πετροκόκκινος, lpetrok@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Μαθηματική Φυσική -->
+                    <div class="card left">
+                        <h3>Μαθηματική Φυσική</h3>
+                        Κωδικός: 18003 & 10ΕΚ411<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Φ. Διάκονος, fdiakono@phys.uoa.gr<br>
+                        Α. Καρανίκας, akaran@phys.uoa.gr<br>
+                        Κ. Σφέτσος, ksfetsos@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Πυρηνική Φυσική -->
+                    <div class="card right">
+                        <h3>Πυρηνική Φυσική</h3>
+                        Κωδικός: 10ΥΚ401<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Θ. Μερτζιμέκης, tmertzi@phys.uoa.gr<br>
+                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Στοιχειώδη Σωμάτια -->
+                    <div class="card left">
+                        <h3>Στοιχειώδη Σωμάτια</h3>
+                        Κωδικός: 10ΥΚ402<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Ν. Τετράδης, ntetrad@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Ιατρική Φυσική -->
+                    <div class="card left">
+                        <h3>Ιατρική Φυσική</h3>
+                        Κωδικός: 10ΕΚ402<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
+                        Π. Παπαγιάννης, ppapagi@med.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Πυρηνική Φυσική (Μεταπτυχιακό) -->
+                    <div class="card right">
+                        <h3>Πυρηνική Φυσική</h3>
+                        Κωδικός: 18205 & 10ΕΚ413<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Ε. Στυλιάρης, stiliaris@phys.uoa.gr<br>
+                        Θ. Μερτζιμέκης, tmertzi@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Στοιχειώδη Σωμάτια (Μεταπτυχιακό) -->
+                    <div class="card left">
+                        <h3>Στοιχειώδη Σωμάτια</h3>
+                        Κωδικός: 18206 & 10ΕΚ412<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Κ. Βελλίδης<br>
+                        Π. Σφήκας<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Σύγχρονη Κβαντική Φυσική και Εφαρμογές -->
+                    <div class="card right">
+                        <h3>Σύγχρονη Κβαντική Φυσική και Εφαρμογές</h3>
+                        Κωδικός: 10ΕΚ403<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκοντες:<br>
+                        Φ. Διάκονος, fdiakono@phys.uoa.gr<br>
+                        Α. Καρανίκας, akaran@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Σύνοψη Κατεύθυνσης -->
+            <div class="semester-summary">
+                <h3>Σύνοψη Κατεύθυνσης Πυρηνικής Φυσικής</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Ζ' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">4</span>
+                        <span class="summary-text">Μαθήματα Η' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Υποχρεωτικά</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Επιλογής</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Επιλογής - Μεταπτυχιακού</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Κ5: Φυσική Συμπυκνωμένης Ύλης -->
+<section id="k5sterea" class="page">
+    <div class="container">
+        <h1>Κ5: Φυσική Συμπυκνωμένης Ύλης</h1>
+        
+        <div class="content-section">
+            <p>Σε αυτή τη σελίδα θα βρείτε τα μαθήματα της κατεύθυνσης Φυσικής Συμπυκνωμένης Ύλης, οργανωμένα ανά εξάμηνο.</p>
+            
+            <!-- Ζ' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Φυσική των Μορίων και Νανοϋλικών -->
+                    <div class="card left">
+                        <h3>Φυσική των Μορίων και Νανοϋλικών</h3>
+                        Κωδικός: 10ΕΚ502<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Β. Λυκοδήμος, vlikodimos@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Στερεάς Κατάστασης -->
+                    <div class="card right">
+                        <h3>Φυσική Στερεάς Κατάστασης</h3>
+                        Κωδικός: 10ΥΚ502<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Σ. Γαρδέλης, sgardelis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Χαλαρής Ύλης -->
+                    <div class="card left">
+                        <h3>Φυσική Χαλαρής Ύλης</h3>
+                        Κωδικός: 10ΕΚ503<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Ι. Λελίδης, ilelidis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η' Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η' Εξάμηνο</h2>
+                <div class="cards">
+                    <!-- Εργαστήριο Κατεύθυνσης Φυσικής Συμπυκνωμένης Ύλης -->
+                    <div class="card left">
+                        <h3>Εργαστήριο Κατεύθυνσης Φυσικής Συμπυκνωμένης Ύλης</h3>
+                        Κωδικός: 10ΥΚ503<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκοντες:<br>
+                        Α. Παπαθανασίου, antpapa@phys.uoa.gr<br>
+                        Δ. Σταμόπουλος, densta@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Κβαντική Οπτική και Lasers -->
+                    <div class="card right">
+                        <h3>Κβαντική Οπτική και Lasers</h3>
+                        Κωδικός: 10ΥΚ501<br>
+                        Τύπος: Υποχρεωτικό<br>
+                        Διδάσκων:<br>
+                        Κ. Σιμσερίδης, csimseri@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Συσχετισμένα Κβαντικά Συστήματα -->
+                    <div class="card left">
+                        <h3>Συσχετισμένα Κβαντικά Συστήματα</h3>
+                        Κωδικός: 10ΕΚ501<br>
+                        Τύπος: Επιλογής<br>
+                        Διδάσκων:<br>
+                        Φ. Μαυρόπουλος, fmavrop@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Ημιαγωγικών Διατάξεων -->
+                    <div class="card right">
+                        <h3>Φυσική Ημιαγωγικών Διατάξεων</h3>
+                        Κωδικός: 18106 & 10ΕΚ512<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Σ. Γαρδέλης, sgardelis@phys.uoa.gr<br>
+                        Α. Τασολάμπρου, atasolam@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <!-- Φυσική Στερεού Φλοιού της Γης -->
+                    <div class="card left">
+                        <h3>Φυσική Στερεού Φλοιού της Γης</h3>
+                        Κωδικός: 18105 & 10ΕΚ511<br>
+                        Τύπος: Επιλογής - Μεταπτυχιακού<br>
+                        Διδάσκοντες:<br>
+                        Ν. Σαρλής, nsarlis@phys.uoa.gr<br>
+                        Ε. Σκορδάς, eskordas@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Σύνοψη Κατεύθυνσης -->
+            <div class="semester-summary">
+                <h3>Σύνοψη Κατεύθυνσης Συμπυκνωμένης Ύλης</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Μαθήματα Ζ' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">5</span>
+                        <span class="summary-text">Μαθήματα Η' Εξαμήνου</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Υποχρεωτικά</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-text">Επιλογής</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">2</span>
+                        <span class="summary-text">Επιλογής - Μεταπτυχιακού</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ελεύθερης Επιλογής -->
+<section id="eleytheris" class="page">
+    <div class="container">
+        <h1>Ελεύθερης Επιλογής</h1>
+        
+        <div class="content-section">
+            <p>Τα Μαθήματα Ελεύθερης Επιλογής προσφέρονται στα Ζ και Η εξάμηνα. Μπορείτε να επιλέξετε μαθήματα από το Τμήμα Φυσικής ή από άλλα τμήματα του Πανεπιστημίου.</p>
+            
+            <!-- Ζ Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Ζ Εξάμηνο</h2>
+                <div class="cards">
+                    <div class="card left">
+                        <h3>Θεωρητική Γεωφυσική</h3>
+                        Κωδικός: 10ΕΛΕ31<br>
+                        Διδάσκοντες:<br>
+                        Φ. Βαλλιανάτος, fvallian@geol.uoa.gr<br>
+                        Ν. Σαρλής, nsarlis@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Ιστορία των Φυσικών Επιστημών</h3>
+                        Κωδικός: 10ΕΛΕ61<br>
+                        Διδάσκων:<br>
+                        Β. Καρακώστας, karakost@phs.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card left">
+                        <h3>Καταστάσεις και Ιδιότητες της Ύλης</h3>
+                        Κωδικός: 10ΕΛΕ05<br>
+                        Διδάσκοντες:<br>
+                        Ι. Λελίδης, ilelidis@phys.uoa.gr<br>
+                        Κ. Σιμσερίδης, csimseri@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Θέματα Σύγχρονης Κυτταρικής Βιολογίας</h3>
+                        Κωδικός: BIOL216<br>
+                        Διδάσκοντες:<br>
+                        Ι.Π. Τρουγκάκος, itrougakos@biol.uoa.gr<br>
+                        Δ.Ι. Στραβοπόδης, dstravop@biol.uoa.gr<br>
+                        Μ.Χ. Αντωνέλου, manton@biol.uoa.gr<br>
+                        Χ. Αλεξόπουλος, halexo@biol.uoa.gr<br>
+                        ΕΔΙΠ: Ο. Κωνσταντή, rconst@biol.uoa.gr<br>
+                        Αθ. Βελέντζας, tveletz@biol.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Η Εξάμηνο -->
+            <div class="semester-section">
+                <h2 class="semester-title">Η Εξάμηνο</h2>
+                <div class="cards">
+                    <div class="card left">
+                        <h3>Ατομική και Μοριακή Φυσική</h3>
+                        Κωδικός: 10ΕΛΕ01<br>
+                        Διδάσκοντες:<br>
+                        Θ. Μερτζιμέκης, tmertzi@phys.uoa.gr<br>
+                        Α. Παπαθανασίου, antpapa@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Γεωμετρία ΙΙ</h3>
+                        Κωδικός: MATH664<br>
+                        Διδάσκων:<br>
+                        Π. Γιαννιώτης, pgianniotis@math.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card left">
+                        <h3>Εργαστήριο Χημείας</h3>
+                        Κωδικός: PHYS259<br>
+                        Διδάσκοντες:<br>
+                        Μ. Ρούλια, roulia@chem.uoa.gr<br>
+                        Ν. Ψαρουδάκης, psaroudakis@chem.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Θεωρία Ομάδων και Εφαρμογές</h3>
+                        Κωδικός: 10ΕΛΕ04<br>
+                        Διδάσκοντες:<br>
+                        Φ. Διάκονος, fdiakono@phys.uoa.gr<br>
+                        Ν. Στεφάνου, nstefan@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card left">
+                        <h3>Θεωρία Πληροφορίας και Κωδίκων</h3>
+                        Κωδικός: ΠΜΣ 528<br>
+                        Διδάσκων:<br>
+                        Ν. Καλουπτσίδης, kalou@di.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Μη Γραμμικά Δυναμικά Συστήματα</h3>
+                        Κωδικός: 10ΕΛΕ06<br>
+                        Διδάσκοντες:<br>
+                        Δ. Φραντζεσκάκης, dfrantz@phys.uoa.gr<br>
+                        Θ. Αποστολάτος, thapostol@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card left">
+                        <h3>Οπτική και Εφαρμογές</h3>
+                        Κωδικός: 10ΕΛΕ03<br>
+                        Διδάσκων:<br>
+                        Κ. Γαζέας, kgaze@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Πραγματική Ανάλυση</h3>
+                        Κωδικός: MATH244<br>
+                        Διδάσκοντες:<br>
+                        Απ. Γιαννόπουλος<br>
+                        Α. Κατάβολος, akatavol@math.uoa.gr<br>
+                        Ε. Δεληγιάννη, ideliyanni@math.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card left">
+                        <h3>Στοχαστικές Διεργασίες στη Φυσική</h3>
+                        Κωδικός: 10ΕΛΕ02<br>
+                        Διδάσκων:<br>
+                        Α. Μουστάκας, arislm@phys.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                    
+                    <div class="card right">
+                        <h3>Χημεία - Τμήμα Φυσικής</h3>
+                        Κωδικός: PHYS267<br>
+                        Διδάσκων:<br>
+                        Ν. Ψαρουδάκης, psaroudakis@chem.uoa.gr<br>
+                        <br>
+                        <a href="#" target="_blank" class="btn btn-thirdary">eClass</a>
+                        <a href="#" target="_blank" class="btn btn-thirdary">Drive</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 
     <!-- Associations Page -->
     <section id="assoc" class="page">
@@ -889,6 +1877,15 @@
                     <button type="submit" class="btn btn-primary">Αποστολή</button>
                 </form>
                 <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+     <section>
+                <div class="content-section">
+                    <h3>Συνεισφορά Υλικού</h3>
+                    <p>Χωρίς εσάς το υλικό αυτό δε θα μπορούσε να είναι διαθέσιμο για όλους, επομένως να θυμάστε πως εάν έχετε βοηθηθεί σε κάποιο μάθημα, μπορείτε να συνεισφέρετε και να βοηθήσετε σε κάποιο άλλο. Για να συνεισφέρετε υλικό, παρακαλούμε επισκεφθείτε τη σελίδα <a href="#contact">Επικοινωνία</a> για περισσότερες πληροφορίες.</p>
+                </div>
             </div>
         </div>
     </section>
