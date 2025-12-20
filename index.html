@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fysiko - Φυσικό ΕΚΠΑ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
 </head>
@@ -30,22 +31,31 @@
                         <li><a href="#activities">Δραστηριότητες</a></li>
                     </ul>
                 </li>
-                <li class="nav-dropdown">
-                    <a href="#courses" class="nav-link">Μαθήματα</a>
+            <li class="nav-dropdown">
+                 <a href="#courses" class="nav-link">Μαθήματα</a>
                     <ul class="dropdown-menu">
                         <li><a href="#prwto-etos">Πρώτος Έτος</a></li>
                         <li><a href="#deytero-etos">Δεύτερο Έτος</a></li>
                         <li><a href="#trito-etos">Τρίτο Έτος</a></li>
                         <li><a href="#ep-kormou-eisagoges">Επ. Κορμού / Εισαγωγής</a></li>
-                        <li><a href="#kateythinsis">Κατεύθυνσης</a></li>
-                        <li><a href="#eleytheris">Ελεύθερης Επιλογής</a></li>
+                        <li class="nav-dropdown-sub">
+                        <a href="#kateythinsis" class="dropdown-link">Κατεύθυνσης <span class="arrow">›</span></a>
+                        <ul class="dropdown-submenu">
+                        <li><a href="#k1astrofysiki">Κ1: Αστροφυσική</a></li>
+                        <li><a href="#k2hlektroniki">Κ2: Ηλεκτρονική</a></li>
+                        <li><a href="#k3periballon">Κ3: Φυσική Περιβάλλοντος</a></li>
+                        <li><a href="#k4pyriniki">Κ4: Πυρηνική Φυσική</a></li>
+                        <li><a href="#k5sterea">Κ5: Συμπυκνωμένη Ύλη</a></li>
                     </ul>
-                </li>
+            </li>
+        <li><a href="#eleytheris">Ελεύθερης Επιλογής</a></li>
+    </ul>
+</li>
                 <li><a href="#assoc" class="nav-link">Σύλλογοι</a></li>
                 <li><a href="#contact" class="nav-link">Επικοινωνία</a></li>
                 <li>
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span id="themeIcon">🌙</span>
+                      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                      <span id="themeIcon" class="theme-icon"></span>
                     </button>
                 </li>
             </ul>
@@ -98,6 +108,7 @@
     <section id="info" class="page">
         <div class="container">
             <h1>Πληροφορίες</h1>
+            <br><br>
             <p class="page-subtitle">Επιλέξτε μία από τις παρακάτω κατηγορίες για περισσότερες πληροφορίες</p>
             
             <div class="info-grid">
@@ -1793,14 +1804,6 @@
     </div>
 </section>
 
- <section>
-                <div class="content-section">
-                    <h3>Συνεισφορά Υλικού</h3>
-                    <p>Χωρίς εσάς το υλικό αυτό δε θα μπορούσε να είναι διαθέσιμο για όλους, επομένως να θυμάστε πως εάν έχετε βοηθηθεί σε κάποιο μάθημα, μπορείτε να συνεισφέρετε και να βοηθήσετε σε κάποιο άλλο. Για να συνεισφέρετε υλικό, παρακαλούμε επισκεφθείτε τη σελίδα <a href="#contact">Επικοινωνία</a> για περισσότερες πληροφορίες.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Associations Page -->
     <section id="assoc" class="page">
@@ -1874,6 +1877,15 @@
                     <button type="submit" class="btn btn-primary">Αποστολή</button>
                 </form>
                 <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+     <section>
+                <div class="content-section">
+                    <h3>Συνεισφορά Υλικού</h3>
+                    <p>Χωρίς εσάς το υλικό αυτό δε θα μπορούσε να είναι διαθέσιμο για όλους, επομένως να θυμάστε πως εάν έχετε βοηθηθεί σε κάποιο μάθημα, μπορείτε να συνεισφέρετε και να βοηθήσετε σε κάποιο άλλο. Για να συνεισφέρετε υλικό, παρακαλούμε επισκεφθείτε τη σελίδα <a href="#contact">Επικοινωνία</a> για περισσότερες πληροφορίες.</p>
+                </div>
             </div>
         </div>
     </section>
